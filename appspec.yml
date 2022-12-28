@@ -1,8 +1,9 @@
-version: 1.0
-os: ubuntu
+version: 0.0
+os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+file_exist_behavior: OVERWRITE
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
